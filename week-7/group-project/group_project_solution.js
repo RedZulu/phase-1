@@ -15,31 +15,32 @@ As as user, I want to be able to do three things:
 // Release 2: Pseudocode
 
 /*
- 1. create an array for your values
- 2. set the array to a variable (for now I'll call it List)
+
+INPUT: An array of values
+OUTPUT: Three values equaling the initial array's sum, mean , and median
+
+1. SET array of values to List
 
 SUM
-  1. create a function for sum with List as arguemt
-  2. create an empty variable set at index 0 (I'll can it Total)
-  3. iterate through List and collapse each integer value onto index zero of Total
-  4. run until the full length of List is reached
-  5. consol log
+  1. SET function to sum, List as arguemt
+  2.    SET Total = 0 
+  3.     LOOP List and collapse each numeric value onto index zero of Total
+  4.     UNTIL the full length of List is reached, compute
+
   
 MEAN
-`1. create function for mean with List as argument
- 2. either repeat steps 2-4 of SUM, or weave sum into MEAN by changing the argument to contain Total and List
- 3. var mean = Total/List.length
- 4. consol log
+ 1. SET function for mean, List as argument
+ 2.   SET variable mean = Total divided by the List length
+
  
 MEDIAN
-`1. create a function for median with List as an argument
- 2. sort list using (a,b)
- 3. create variable half
- 4. set to a math object with a floor rounder for List length divided by 2
-    - var half = Math.floor(list.length/2)
- 5. if list.length modululous 2 (the division has no remainder) return list[half]
- 6. else move down the array and return list[half-1]+list[half]/2.0
- 7. consol log
-  
+`1. SER function for median, List as an argument
+ 2.   SORT List from low to high
+ 3.   SET half = 0
+ 4.    FOR half 
+         divide list length by two and round down
+ 5.   IF list length has a true modululous of 2
+        RETURN list[half]
+ 6.   ELSE increment down the array
 
 */
